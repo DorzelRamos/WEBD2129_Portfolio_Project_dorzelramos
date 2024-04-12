@@ -2,5 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: grey;
+    // background-color: red;
+}
+
+// ////////////////////////////// Colors
+
+$whiteColor: #fff;
+$blackColor: #000;
+
+$greyColor: #66615A;
+$brownColor: #917F67;
+$orangeColor: #E5A756;
+
+$gradientColor: linear-gradient(180deg, #e6daca 0%, #736d65 100%);
+
+// /////////////////////////////// Fonts
+@font-face {
+    font-family: Bahnschrift;
+    src: url("../fonts/BAHNSCHRIFT.TTF");
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato-Regular.ttf");
 }

@@ -2,5 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: grey;
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  src: url("../fonts/BAHNSCHRIFT.TTF");
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf");
 }/*# sourceMappingURL=style.css.map */
