@@ -37,3 +37,18 @@ $Lato: "lato", sans-serif;
 //         font-family: $Lato;
 //     }
 // }
+
+// ////////////////////////////// NAV STARTS HERE
+.nav {
+    position: absolute;
+    width: 100%;
+    background-color: $greyColor;
+    height: 100px;
+}
+
+.nav__list {
+    position: relative;
+}
+
+// ////////////////////////////// NAV ENDS HERE
+
