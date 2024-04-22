@@ -38,17 +38,30 @@ $Lato: "lato", sans-serif;
 //     }
 // }
 
+// ////////////////////////////// CONTAINER STARTS HERE
+#container {
+
 // ////////////////////////////// NAV STARTS HERE
 .nav {
     position: absolute;
     width: 100%;
-    background-color: $greyColor;
+    background-color: $brownColor;
     height: 100px;
 }
 
 .nav__list {
+    display: flex;
     position: relative;
+    li {
+        list-style: none;
+    }
+
 }
 
 // ////////////////////////////// NAV ENDS HERE
+
+}
+
+// ////////////////////////////// CONTAINER ENDS HERE
+
 

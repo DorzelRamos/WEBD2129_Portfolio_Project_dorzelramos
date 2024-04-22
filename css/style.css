@@ -12,13 +12,16 @@
   font-family: lato;
   src: url("../fonts/Lato-Regular.ttf");
 }
-.nav {
+#container .nav {
   position: absolute;
   width: 100%;
-  background-color: #66615A;
+  background-color: #917F67;
   height: 100px;
 }
-
-.nav__list {
+#container .nav__list {
+  display: flex;
   position: relative;
+}
+#container .nav__list li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
