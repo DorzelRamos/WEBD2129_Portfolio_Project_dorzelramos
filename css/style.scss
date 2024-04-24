@@ -82,16 +82,45 @@ $Lato: "lato", sans-serif;
 }
 // ////////////////////////////// NAV ENDS HERE
 
-// ////////////////////////////// NAV STYLING STARTS HERE
-// li a {
-//     text-decoration: none;
-//     color: $orangeColor;
-//     font-family: $Bahnschrift;
-//     font-size: 30px;
-//     margin: 60px 40px 0px 25px;
-//     // padding: 60px 40px 0px 25px;
-// }
-// ////////////////////////////// NAV STYLING ENDS HERE
+// ////////////////////////////// BOX 1 STARTS HERE
+#box-1 {
+    position: absolute;
+    width: 100%;
+    height: 276px;
+    top: 125px;
+    background-color: $brownColor;
+    display: flex;
+    justify-content: center;
+}
+// ////////////////////////////// BOX 1 STARTS HERE
+
+// ///////////////////////////// FOOTER STARTS HERE
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: $greyColor;
+    span.copyright {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 2em;
+        color: $orangeColor;
+        margin-right: 100px;
+        position: relative;
+        top: 30px;
+        font-family: $Bahnschrift;
+    }
+    #socials {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        position: relative;
+        top: -10px;
+    }
+}
+// ///////////////////////////// FOOTER ENDS HERE
 
 // ////////////////////////////// CONTAINER ENDS HERE
 }
