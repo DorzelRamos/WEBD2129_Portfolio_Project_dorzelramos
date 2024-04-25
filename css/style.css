@@ -52,8 +52,19 @@
   height: 276px;
   top: 125px;
   background-color: #917F67;
-  display: flex;
-  justify-content: center;
+  display: grid;
+}
+#container #box-1 svg {
+  margin: auto;
+}
+#container #box-1 h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+}
+#container #box-2 {
+  background-image: url("/images/portfolio_svgs_dorzelramos/home_background.png");
 }
 #container footer {
   height: 100px;

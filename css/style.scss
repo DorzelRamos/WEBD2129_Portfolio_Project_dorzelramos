@@ -89,10 +89,24 @@ $Lato: "lato", sans-serif;
     height: 276px;
     top: 125px;
     background-color: $brownColor;
-    display: flex;
-    justify-content: center;
+    display: grid;
+   svg {
+    margin: auto;
+   }
+    h1 {
+        color: $whiteColor;
+        font-family: $Bahnschrift;
+        font-size: 45px;
+        margin: auto;
+    }
 }
 // ////////////////////////////// BOX 1 STARTS HERE
+
+// ////////////////////////////// BOX 2 STARTS HERE
+#box-2 {
+    background-image: url("/images/portfolio_svgs_dorzelramos/home_background.png");
+}
+// ////////////////////////////// BOX 2 STARTS HERE
 
 // ///////////////////////////// FOOTER STARTS HERE
 footer {
