@@ -65,6 +65,11 @@
 }
 #container #box-2 {
   background-image: url("/images/home_background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  height: 72em;
+  width: auto;
 }
 #container footer {
   height: 100px;
