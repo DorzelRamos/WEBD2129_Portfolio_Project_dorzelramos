@@ -29,14 +29,6 @@ $gradientColor: linear-gradient(180deg, #e6daca 0%, #736d65 100%);
 $Bahnschrift: "bahnschrift", sans-serif;
 $Lato: "lato", sans-serif;
 
-// .test-container {
-//     h1 {
-//         font-family: $Bahnschrift;
-//     }
-//     p {
-//         font-family: $Lato;
-//     }
-// }
 
 // ////////////////////////////// CONTAINER STARTS HERE
 #container {
@@ -82,8 +74,8 @@ $Lato: "lato", sans-serif;
 }
 // ////////////////////////////// NAV ENDS HERE
 
-// ////////////////////////////// BOX 1 STARTS HERE
-#box-1 {
+// ////////////////////////////// HOME - BOX 1 STARTS HERE
+#box1-home {
     position: absolute;
     width: 100%;
     height: 276px;
@@ -100,10 +92,10 @@ $Lato: "lato", sans-serif;
         margin: auto;
     }
 }
-// ////////////////////////////// BOX 1 STARTS HERE
+// ////////////////////////////// HOME - BOX 1 ENDS HERE
 
-// ////////////////////////////// BOX 2 STARTS HERE
-#box-2 {
+// ////////////////////////////// HOME - BOX 2 STARTS HERE
+#box2-home {
     // position: relative;
     // *NOTE: the position clashes with box-1 making the navigation bar un-interactable
     background-image: url("/images/home_background.png");
@@ -113,7 +105,40 @@ $Lato: "lato", sans-serif;
     height: 72em;
     width: auto;
 }
-// ////////////////////////////// BOX 2 STARTS HERE
+// ////////////////////////////// HOME - BOX 2 ENDS HERE
+
+// ////////////////////////////// ABOUT - BOX 1 STARTS HERE
+#box1-about {
+    position: absolute;
+    width: 100%;
+    height: 276px;
+    top: 125px;
+    background-color: $brownColor;
+    display: grid;
+   svg {
+    margin: auto;
+   }
+    h1 {
+        color: $whiteColor;
+        font-family: $Bahnschrift;
+        font-size: 45px;
+        margin: auto;
+    }
+}
+// ////////////////////////////// ABOUT - BOX 1 ENDS HERE
+
+// ////////////////////////////// ABOUT - BOX 2 STARTS HERE
+#box2-about {
+    // position: relative;
+    // *NOTE: the position clashes with box-1 making the navigation bar un-interactable
+    background-image: url("/images/home_background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 72em;
+    width: auto;
+}
+// ////////////////////////////// ABOUT - BOX 2 ENDS HERE
 
 // ///////////////////////////// FOOTER STARTS HERE
 footer {

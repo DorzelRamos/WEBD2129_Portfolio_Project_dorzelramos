@@ -46,7 +46,7 @@
 #container .nav__list .nav__listitem a:hover {
   color: #fff;
 }
-#container #box-1 {
+#container #box1-home {
   position: absolute;
   width: 100%;
   height: 276px;
@@ -54,16 +54,41 @@
   background-color: #917F67;
   display: grid;
 }
-#container #box-1 svg {
+#container #box1-home svg {
   margin: auto;
 }
-#container #box-1 h1 {
+#container #box1-home h1 {
   color: #fff;
   font-family: "bahnschrift", sans-serif;
   font-size: 45px;
   margin: auto;
 }
-#container #box-2 {
+#container #box2-home {
+  background-image: url("/images/home_background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  height: 72em;
+  width: auto;
+}
+#container #box1-about {
+  position: absolute;
+  width: 100%;
+  height: 276px;
+  top: 125px;
+  background-color: #917F67;
+  display: grid;
+}
+#container #box1-about svg {
+  margin: auto;
+}
+#container #box1-about h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+}
+#container #box2-about {
   background-image: url("/images/home_background.png");
   background-repeat: no-repeat;
   background-size: 100%;
