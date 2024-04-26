@@ -89,12 +89,22 @@
   margin: auto;
 }
 #container #box2-about {
-  background-image: url("/images/home_background.png");
+  position: relative;
+  background-image: url("/images/about_background.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  height: 72em;
+  height: 74em;
   width: auto;
+  z-index: 0;
+}
+#container #box3-about {
+  display: grid;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  margin-top: -689px;
+  grid: row/200px;
 }
 #container footer {
   height: 100px;

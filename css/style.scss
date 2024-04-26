@@ -129,14 +129,26 @@ $Lato: "lato", sans-serif;
 
 // ////////////////////////////// ABOUT - BOX 2 STARTS HERE
 #box2-about {
-    // position: relative;
-    // *NOTE: the position clashes with box-1 making the navigation bar un-interactable
-    background-image: url("/images/home_background.png");
+    position: relative;
+    background-image: url("/images/about_background.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    height: 72em;
+    height: 74em;
     width: auto;
+    z-index: 0;
+}
+// ////////////////////////////// ABOUT - BOX 2 ENDS HERE
+
+// ////////////////////////////// ABOUT - BOX 3 STARTS HERE
+#box3-about {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin-top: -689px;
+    // grid-auto-flow: row;
+    grid: row / 200px;
 }
 // ////////////////////////////// ABOUT - BOX 2 ENDS HERE
 
