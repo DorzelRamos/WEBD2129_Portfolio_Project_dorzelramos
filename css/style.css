@@ -78,6 +78,7 @@
   top: 125px;
   background-color: #917F67;
   display: grid;
+  z-index: 1;
 }
 #container #box1-about svg {
   margin: auto;
@@ -89,7 +90,6 @@
   margin: auto;
 }
 #container #box2-about {
-  position: relative;
   background-image: url("/images/about_background.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -99,12 +99,27 @@
   z-index: 0;
 }
 #container #box3-about {
-  display: grid;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
-  margin-top: -689px;
-  grid: row/200px;
+  display: flex;
+  margin: -657px 0px;
+}
+#container #box3-about #item1 {
+  position: relative;
+  margin-left: 11.5em;
+}
+#container #box3-about #item2 {
+  position: relative;
+  background-color: #917F67;
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 30px;
+  padding: 3em;
+  height: 12em;
+  width: 48em;
+  text-align: left;
+  margin-left: 2.5em;
 }
 #container footer {
   height: 100px;

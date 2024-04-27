@@ -115,6 +115,7 @@ $Lato: "lato", sans-serif;
     top: 125px;
     background-color: $brownColor;
     display: grid;
+    z-index: 1;
    svg {
     margin: auto;
    }
@@ -129,7 +130,7 @@ $Lato: "lato", sans-serif;
 
 // ////////////////////////////// ABOUT - BOX 2 STARTS HERE
 #box2-about {
-    position: relative;
+
     background-image: url("/images/about_background.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -142,13 +143,28 @@ $Lato: "lato", sans-serif;
 
 // ////////////////////////////// ABOUT - BOX 3 STARTS HERE
 #box3-about {
-    display: grid;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 1;
-    margin-top: -689px;
-    // grid-auto-flow: row;
-    grid: row / 200px;
+    display: flex;
+    margin: -657px 0px;
+    #item1 {
+        position: relative;
+        margin-left: 11.5em;
+    }
+    #item2 {
+        position: relative;
+        background-color: $brownColor;
+        color: $whiteColor;
+        font-family: $Bahnschrift;
+        font-size: 30px;
+        padding: 3em;
+        height: 12em;
+        width: 48em;
+        text-align: left;
+        margin-left: 2.5em;
+        // margin-top: 50px;
+    }
 }
 // ////////////////////////////// ABOUT - BOX 2 ENDS HERE
 
