@@ -99,10 +99,8 @@ $Lato: "lato", sans-serif;
   // ////////////////////////////// HOME - BOX 1 ENDS HERE
 
   // ////////////////////////////// HOME - BOX 2 STARTS HERE
-  #box2-home {
+  #box2-home {    // *ISSUE: height makes extra space at the bottom
     position: relative;
-    // *ISSUE: the position clashes with box-1 making the navigation bar unclickable
-    // *FIXED: removed top which was clashing with height and background-size: 100%;, change z-index to -1
     background-image: url("/images/home_background.png");
     background-repeat: no-repeat;
     // background-repeat: repeat;
