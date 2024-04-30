@@ -80,7 +80,7 @@ $Lato: "lato", sans-serif;
 
   // ////////////////////////////// HOME - BOX 1 STARTS HERE
   #box1-home {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 276px;
     top: 125px;
@@ -100,15 +100,18 @@ $Lato: "lato", sans-serif;
 
   // ////////////////////////////// HOME - BOX 2 STARTS HERE
   #box2-home {
-    // position: relative;
-    // *NOTE: the position clashes with box-1 making the navigation bar un-interactable
+    position: relative;
+    // *ISSUE: the position clashes with box-1 making the navigation bar unclickable
+    // *FIXED: removed top which was clashing with height and background-size: 100%;, change z-index to -1
     background-image: url("/images/home_background.png");
-    // background-repeat: no-repeat;
-    background-repeat: repeat;
-    background-size: 100%;
-    background-position: bottom;
-    height: 79em;
-    width: auto;
+    background-repeat: no-repeat;
+    // background-repeat: repeat;
+    // background-size: 100%;
+    background-size: contain;
+    background-position: center;
+    height: 60em;
+    width: 100%;
+    z-index: -1;
   }
   // ////////////////////////////// HOME - BOX 2 ENDS HERE
 
@@ -135,14 +138,17 @@ $Lato: "lato", sans-serif;
 
   // ////////////////////////////// ABOUT - BOX 2 STARTS HERE
   #box2-about {
-    background-image: url("/images/home_background.png");
-    // background-repeat: no-repeat;
-    background-repeat: repeat;
-    background-size: 100%;
-    background-position: bottom;
-    height: 79em;
-    width: auto;
-    z-index: 0;
+    position: relative;
+    background-image: url("/images/about_background.png");
+    background-repeat: no-repeat;
+    // background-repeat: repeat;
+    // background-size: 100%;
+    background-size: contain;
+    background-position: center;
+    height: 106em;
+    // width: auto;
+    width: 100%;
+    z-index: -1;
   }
   // ////////////////////////////// ABOUT - BOX 2 ENDS HERE
 
