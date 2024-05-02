@@ -28,22 +28,32 @@
 #mobile-nav section {
   display: grid;
   height: calc(100vh - 125px);
-  background: url("../images/home_background.png");
+  background-color: #66615a;
 }
 #mobile-nav section ul.nav__list {
-  padding: 2em 4em;
-  background: white;
+  position: relative;
+  top: -100px;
+  height: 100%;
   margin: auto;
-  margin-top: 150px;
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #mobile-nav section ul.nav__list li.nav__listitem {
   margin: 1em 0;
 }
 #mobile-nav section ul.nav__list li.nav__listitem a {
   text-decoration: none;
+  color: #e5a756;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#mobile-nav section ul.nav__list li.nav__listitem a:hover {
+  color: #fff;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #mobile-nav section ul.nav__list {
@@ -101,6 +111,14 @@
   text-decoration: none;
   color: #e5a756;
   font-family: "bahnschrift", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  top: 1em;
+}
+.container .navbar ul.nav__list li.nav__listitem a:hover {
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .container .navbar ul.nav__list {
@@ -127,6 +145,12 @@
   font-size: 45px;
   margin: auto;
   width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container #box1-home section h1 {
+    font-size: 25px;
+  }
 }
 .container footer {
   position: absolute;
