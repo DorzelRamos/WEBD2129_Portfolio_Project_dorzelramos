@@ -63,7 +63,6 @@
 
 .container {
   width: 100%;
-  height: 100vh;
   position: absolute;
   z-index: 0;
   top: 0;
@@ -152,7 +151,82 @@
     font-size: 25px;
   }
 }
-.container footer {
+.container #box1-about {
+  position: relative;
+  width: 100%;
+  background-image: url("../images/home_background.png");
+}
+.container #box1-about section#header-section {
+  position: relative;
+  background-color: #917f67;
+  padding: 1em;
+}
+.container #box1-about section#header-section svg {
+  width: 100%;
+}
+.container #box1-about section#header-section h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container #box1-about section#header-section h1 {
+    font-size: 25px;
+  }
+}
+.container #box1-about div#about-content {
+  width: 100%;
+  display: grid;
+}
+.container #box1-about div#about-content section#about-section {
+  width: 100%;
+  margin: auto;
+}
+.container #box1-about div#about-content section#about-section img#about-item1 {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 1em;
+}
+.container #box1-about div#about-content section#about-section p {
+  background-color: #917f67;
+  padding: 2em;
+}
+
+footer#home-footer {
+  position: absolute;
+  margin-top: 100px;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #66615a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+footer#home-footer span.copyright {
+  font-size: 1em;
+  color: #e5a756;
+  font-family: "bahnschrift", sans-serif;
+}
+footer#home-footer #socials {
+  transform: scale(0.75);
+}
+footer#home-footer #socials path {
+  fill: #e5a756;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+footer#home-footer #socials path:hover {
+  fill: #fff;
+}
+
+footer#about-footer {
   position: absolute;
   bottom: 0;
   height: 100px;
@@ -163,19 +237,19 @@
   align-items: center;
   padding: 0 1em;
 }
-.container footer span.copyright {
+footer#about-footer span.copyright {
   font-size: 1em;
   color: #e5a756;
   font-family: "bahnschrift", sans-serif;
 }
-.container footer #socials {
+footer#about-footer #socials {
   transform: scale(0.75);
 }
-.container footer #socials path {
+footer#about-footer #socials path {
   fill: #e5a756;
   cursor: pointer;
   transition: all 200ms linear;
 }
-.container footer #socials path:hover {
-  fill: #FFF;
+footer#about-footer #socials path:hover {
+  fill: #fff;
 }/*# sourceMappingURL=style.css.map */
