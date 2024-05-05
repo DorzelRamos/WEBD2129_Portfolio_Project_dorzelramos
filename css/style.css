@@ -48,6 +48,34 @@
   height: 4px;
   background: white;
 }
+.container nav.navbar ul#desktop-nav {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+}
+.container nav.navbar ul#desktop-nav li.nav__listitem {
+  margin: 0 1em;
+}
+.container nav.navbar ul#desktop-nav li.nav__listitem a {
+  text-decoration: none;
+  color: #e5a756;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  top: 1em;
+}
+@media screen and (max-width: 768px) {
+  .container nav.navbar ul#desktop-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container nav.navbar .hamburger-menu {
+    display: none;
+  }
+}
 .container section#mobile-nav {
   width: 100%;
   height: calc(100vh - 225px);
@@ -96,6 +124,25 @@ div#home-content {
   height: calc(100vh - 225px);
   position: relative;
   background-image: url("../images/home_background.jpg");
+}
+div#home-content section {
+  background-color: #917f67;
+}
+div#home-content img {
+  width: 100%;
+}
+div#home-content h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  div#home-content h1 {
+    font-size: 25px;
+  }
 }
 
 footer {

@@ -59,6 +59,36 @@ $gradientColor: linear-gradient(180deg, #e6daca 0%, #736d65 100%);
               background: white;
             }
           }
+
+          ul#desktop-nav {
+            // visibility: hidden;
+            list-style: none;
+            margin-left: auto;
+            display: flex;
+            li.nav__listitem {
+              margin: 0 1em;
+              a {
+                text-decoration: none;
+                color: $orangeColor;
+                font-family: $Bahnschrift;
+                font-size: 30px;
+                cursor: pointer;
+                transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                position: relative;
+                top: 1em;
+              }
+            }
+          }
+          @media screen and (max-width: 768px) {
+            ul#desktop-nav {
+              display: none;
+            }
+          }
+          @media screen and (min-width: 768px) {
+            .hamburger-menu {
+              display: none;
+            }
+          }
     }
     section#mobile-nav {
         width: 100%;
@@ -118,17 +148,32 @@ $gradientColor: linear-gradient(180deg, #e6daca 0%, #736d65 100%);
              }
            }
          }
-
-
-
-           
+  
     }
     div#home-content {
         height: calc(100vh - 225px);
         position: relative;
         background-image: url("../images/home_background.jpg");
         // background: green;
-        
+      section {
+        background-color: $brownColor;
+      }
+      img {
+        width: 100%;
+      }
+      h1 {
+        color: $whiteColor;
+        font-family: $Bahnschrift;
+        font-size: 45px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 25px;
+        }
+      }
     }
       ///////////////////////////////////footer starts
   footer {
