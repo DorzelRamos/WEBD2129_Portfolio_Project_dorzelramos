@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  // ////////////////////////////// Colors
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// ////////////////////////////// Colors
 $whiteColor: #fff;
 $blackColor: #000;
 $greyColor: #66615a;
@@ -12,209 +12,339 @@ $orangeColor: #e5a756;
 $gradientColor: linear-gradient(180deg, #e6daca 0%, #736d65 100%);
 // /////////////////////////////// Fonts
 @font-face {
-    font-family: bahnschrift;
-    src: url("../fonts/BAHNSCHRIFT.TTF");
-  }
-  
-  @font-face {
-    font-family: lato;
-    src: url("../fonts/Lato-Regular.ttf");
-  }
-  
-  $Bahnschrift: "bahnschrift", sans-serif;
-  $Lato: "lato", sans-serif;
-.container {
-    width: 100%;
-    height: 100vh;
-    // background-color: red;
-    position: relative;
-    nav.navbar {
-        height: 125px;
-        background-color: $greyColor;
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding: 0 1em;
-        display: flex;
-        align-items: center;
-        padding: 0 1em;
-        img#dorzel-logo {
-            width: 86px;
-            height: 90px;
-        }
-        .hamburger-menu {
-            position: relative;
-            z-index: 2;
-            margin-left: auto;
-            list-style: none;
-            width: 40px;
-            height: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            // display: none;
-            li {
-              width: 100%;
-              height: 4px;
-              background: white;
-            }
-          }
-
-          ul#desktop-nav {
-            // visibility: hidden;
-            list-style: none;
-            margin-left: auto;
-            display: flex;
-            li.nav__listitem {
-              margin: 0 1em;
-              a {
-                text-decoration: none;
-                color: $orangeColor;
-                font-family: $Bahnschrift;
-                font-size: 30px;
-                cursor: pointer;
-                transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-                position: relative;
-                top: 1em;
-              }
-            }
-          }
-          @media screen and (max-width: 768px) {
-            ul#desktop-nav {
-              display: none;
-            }
-          }
-          @media screen and (min-width: 768px) {
-            .hamburger-menu {
-              display: none;
-            }
-          }
-    }
-    section#mobile-nav {
-        width: 100%;
-        height: calc(100vh - 225px);
-        position: absolute;
-        // background: orange;
-        background-color: $greyColor;
-
-        
-        // z-index: 0;
-        // display: none;
-    }
-    .show {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-           z-index: 1;
-
-        //    display: grid;
-        //    height: calc(100vh - 125px);
-           // background: url("../images/home_background-transparent.png");
-        
-           // opacity: 0.7;
-           ul.nav__list {
-             position: relative;
-             top: -100px;
-             height: 100%;
-             // padding: 2em 4em;
-             // background: white;
-             margin: auto;
-             // margin-top: 150px;
-             list-style: none;
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             li.nav__listitem {
-               margin: 1em 0;
-               a {
-                 text-decoration: none;
-                 color: $orangeColor;
-                 font-family: $Bahnschrift;
-                 font-size: 30px;
-                 cursor: pointer;
-                 transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-               }
-               a:hover {
-                 color: $whiteColor;
-               }
-             }
-           }
-       
-           @media screen and (min-width: 768px) and (max-width: 1024px) {
-             ul.nav__list {
-               transform: scale(2);
-             }
-           }
-         }
-  
-    }
-    div#home-content {
-        height: calc(100vh - 225px);
-        position: relative;
-        background-image: url("../images/home_background.jpg");
-        // background: green;
-      section {
-        background-color: $brownColor;
-      }
-      img {
-        width: 100%;
-      }
-      h1 {
-        color: $whiteColor;
-        font-family: $Bahnschrift;
-        font-size: 45px;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-      }
-      @media screen and (max-width: 768px) {
-        h1 {
-          font-size: 25px;
-        }
-      }
-    }
-      ///////////////////////////////////footer starts
-  footer {
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: $greyColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em;
-    span.copyright {
-      font-size: 1em;
-      color: $orangeColor;
-      font-family: $Bahnschrift;
-    }
-    #socials {
-      transform: scale(0.75);
-      path {
-        fill: #e5a756;
-        cursor: pointer;
-        transition: all 200ms linear;
-      }
-      path:hover {
-        fill: #fff;
-      }
-    }
-  }
-
-
-#about-container {
-    height: 100%;
-        div#about-content {
-        // height: 300vh;
-        position: relative;
-        background: green;
-        .test {
-            height: 120vh;
-            background-color: #e5a756;
-        }
-    }
+  font-family: bahnschrift;
+  src: url("../fonts/BAHNSCHRIFT.TTF");
 }
 
+@font-face {
+  font-family: lato;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+$Bahnschrift: "bahnschrift", sans-serif;
+$Lato: "lato", sans-serif;
+.container {
+  width: 100%;
+  height: 100vh;
+  // background-color: red;
+  position: relative;
+  nav.navbar {
+    height: 125px;
+    background-color: $greyColor;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    img#dorzel-logo {
+      width: 86px;
+      height: 90px;
+    }
+    .hamburger-menu {
+      position: relative;
+      z-index: 2;
+      margin-left: auto;
+      list-style: none;
+      width: 40px;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      li {
+        width: 100%;
+        height: 4px;
+        background: white;
+      }
+    }
+
+    ul#desktop-nav {
+      list-style: none;
+      margin-left: auto;
+      display: flex;
+      li.nav__listitem {
+        margin: 0 1em;
+        a {
+          text-decoration: none;
+          color: $orangeColor;
+          font-family: $Bahnschrift;
+          font-size: 30px;
+          cursor: pointer;
+          transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+          position: relative;
+          top: 1em;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      ul#desktop-nav {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      .hamburger-menu {
+        display: none;
+      }
+    }
+  }
+  section#mobile-nav {
+    width: 100%;
+    height: calc(100vh - 225px);
+    position: absolute;
+    // background: orange;
+    background-color: $greyColor;
+
+    // z-index: 0;
+    // display: none;
+  }
+  .show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    //    display: grid;
+    //    height: calc(100vh - 125px);
+    // background: url("../images/home_background-transparent.png");
+
+    // opacity: 0.7;
+    ul.nav__list {
+      position: relative;
+      top: -100px;
+      height: 100%;
+      // padding: 2em 4em;
+      // background: white;
+      margin: auto;
+      // margin-top: 150px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li.nav__listitem {
+        margin: 1em 0;
+        a {
+          text-decoration: none;
+          color: $orangeColor;
+          font-family: $Bahnschrift;
+          font-size: 30px;
+          cursor: pointer;
+          transition: color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        a:hover {
+          color: $whiteColor;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      ul.nav__list {
+        transform: scale(2);
+      }
+    }
+  }
+}
+div#home-content {
+  height: calc(100vh - 225px);
+  position: relative;
+  background-image: url("../images/home_background.jpg");
+  // background: green;
+  section {
+    background-color: $brownColor;
+  }
+  // svg {
+  //   width: 100%;
+  // }
+  img {
+    width: 100%;
+  }
+  h1 {
+    color: $whiteColor;
+    font-family: $Bahnschrift;
+    font-size: 45px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+///////////////////////////////////footer starts
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: $greyColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  span.copyright {
+    font-size: 1em;
+    color: $orangeColor;
+    font-family: $Bahnschrift;
+  }
+  #socials {
+    transform: scale(0.75);
+    path {
+      fill: #e5a756;
+      cursor: pointer;
+      transition: all 200ms linear;
+    }
+    path:hover {
+      fill: #fff;
+    }
+  }
+}
+
+#about-container {
+  height: 100%;
+  div#about-content {
+    height: 118vh;
+    // height: 300vh;
+    position: relative;
+    // background: green;
+    background-image: url("../images/home_background.jpg");
+    section {
+      background-color: $brownColor;
+    }
+    svg {
+      width: 100%;
+    }
+    // img#about-img {
+    //   width: 100%;
+    //   height: 80%;
+    // }
+    h1 {
+      color: $whiteColor;
+      font-family: $Bahnschrift;
+      font-size: 45px;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+  @media screen and (min-width: 320px) {
+    div#about-content {
+      height: 90vh;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    div#about-content {
+      height: 108vh;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    div#about-content {
+      height: 104vh;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    div#about-content {
+      height: 110vh
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    div#about-content {
+      height: 98vh;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    div#about-content {
+      height: 98vh;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    div#about-content {
+      height: 94vh;
+    }
+  }
+
+  div#about-box {
+    margin: 2.25em 0;
+    justify-content: center;
+    width: 100%;
+    #about-objects {
+      width: 100%;
+      img#about-item1 {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        padding: 1em;
+      }
+      @media screen and (min-width: 320px) {
+        img#about-item1 {
+          width: 225px;
+        }
+      }
+      @media screen and (min-width: 425px) {
+        img#about-item1 {
+          width: 228px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        img#about-item1 {
+          width: auto;
+        }
+      }
+      p {
+        position: relative;
+        background-color: $brownColor;
+        padding: 2em;
+        color: $whiteColor;
+        font-family: $Bahnschrift;
+        font-size: 20px;
+      }
+      @media screen and (min-width: 320px) {
+        p {
+          font-size: 17px;
+        }
+      }
+      @media screen and (min-width: 375px) {
+        p {
+          font-size: 22px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        p {
+          font-size: 23px;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        p {
+          font-size: 30px;
+        }
+      }
+      @media screen and (min-width: 2560px) {
+        p {
+          font-size: 40px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      img#about-item1 {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      #about-objects {
+        display: flex;
+      }
+      p {
+        margin: 2em;
+      }
+    }
+  }
+}

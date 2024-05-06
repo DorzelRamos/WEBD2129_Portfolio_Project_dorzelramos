@@ -71,7 +71,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .container nav.navbar .hamburger-menu {
     display: none;
   }
@@ -177,10 +177,137 @@ footer #socials path:hover {
   height: 100%;
 }
 #about-container div#about-content {
+  height: 118vh;
   position: relative;
-  background: green;
+  background-image: url("../images/home_background.jpg");
 }
-#about-container div#about-content .test {
-  height: 120vh;
-  background-color: #e5a756;
+#about-container div#about-content section {
+  background-color: #917f67;
+}
+#about-container div#about-content svg {
+  width: 100%;
+}
+#about-container div#about-content h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #about-container div#about-content h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 320px) {
+  #about-container div#about-content {
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 375px) {
+  #about-container div#about-content {
+    height: 108vh;
+  }
+}
+@media screen and (min-width: 425px) {
+  #about-container div#about-content {
+    height: 104vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  #about-container div#about-content {
+    height: 110vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #about-container div#about-content {
+    height: 98vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #about-container div#about-content {
+    height: 98vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #about-container div#about-content {
+    height: 94vh;
+  }
+}
+#about-container div#about-box {
+  margin: 2.25em 0;
+  justify-content: center;
+  width: 100%;
+}
+#about-container div#about-box #about-objects {
+  width: 100%;
+}
+#about-container div#about-box #about-objects img#about-item1 {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 1em;
+}
+@media screen and (min-width: 320px) {
+  #about-container div#about-box #about-objects img#about-item1 {
+    width: 225px;
+  }
+}
+@media screen and (min-width: 425px) {
+  #about-container div#about-box #about-objects img#about-item1 {
+    width: 228px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #about-container div#about-box #about-objects img#about-item1 {
+    width: auto;
+  }
+}
+#about-container div#about-box #about-objects p {
+  position: relative;
+  background-color: #917f67;
+  padding: 2em;
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 320px) {
+  #about-container div#about-box #about-objects p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 375px) {
+  #about-container div#about-box #about-objects p {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #about-container div#about-box #about-objects p {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #about-container div#about-box #about-objects p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #about-container div#about-box #about-objects p {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-container div#about-box img#about-item1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  #about-container div#about-box #about-objects {
+    display: flex;
+  }
+  #about-container div#about-box p {
+    margin: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */
