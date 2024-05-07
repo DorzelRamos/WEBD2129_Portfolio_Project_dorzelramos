@@ -415,4 +415,76 @@ footer #socials path:hover {
     display: flex;
     margin: 1em auto;
   }
+}
+
+#contact-container {
+  height: 100%;
+}
+#contact-container div#contact-content {
+  height: 200vh;
+  position: relative;
+  background-image: url("../images/home_background.jpg");
+}
+#contact-container div#contact-content section {
+  background-color: #917f67;
+}
+#contact-container div#contact-content svg {
+  width: 100%;
+}
+#contact-container div#contact-content h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #contact-container div#contact-content h1 {
+    font-size: 25px;
+  }
+}
+#contact-container div#contact-box {
+  width: 100%;
+  height: 50em;
+}
+#contact-container div#contact-box form {
+  display: flex;
+  flex-direction: column;
+  background-color: #917f67;
+  width: 100%;
+  height: 40em;
+  margin: 1em 0;
+  justify-content: center;
+}
+#contact-container div#contact-box form input[type=email], #contact-container div#contact-box form input[type=text], #contact-container div#contact-box form textarea {
+  border: none;
+  height: 60px;
+  margin: 1em;
+  padding: 1em;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 15px;
+  color: #66615a;
+}
+#contact-container div#contact-box form textarea {
+  height: 160px;
+}
+#contact-container div#contact-box form button#button {
+  border: none;
+  width: 175px;
+  height: 42px;
+  font-family: "bahnschrift", sans-serif;
+  color: #fff;
+  background-color: #e5a756;
+  font-size: 20px;
+  margin: 0 0.75em;
+}
+#contact-container div#contact-box form button#button #contact-info {
+  width: 100%;
+}
+#contact-container div#contact-box form button#button #contact-info img {
+  margin: 1em;
+  background-color: #917f67;
+  max-width: 60px;
+  min-height: 500px;
 }/*# sourceMappingURL=style.css.map */
