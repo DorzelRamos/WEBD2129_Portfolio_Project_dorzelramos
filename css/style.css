@@ -217,7 +217,7 @@ footer #socials path:hover {
 }
 @media screen and (min-width: 768px) {
   #about-container div#about-content {
-    height: 110vh;
+    height: 114vh;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -309,5 +309,110 @@ footer #socials path:hover {
   }
   #about-container div#about-box p {
     margin: 2em;
+  }
+}
+
+#portfolio-container {
+  height: 100%;
+}
+#portfolio-container div#portfolio-content {
+  height: 1000vh;
+  position: relative;
+  background-image: url("../images/home_background.jpg");
+}
+#portfolio-container div#portfolio-content section {
+  background-color: #917f67;
+  padding: 0.95em 0;
+}
+#portfolio-container div#portfolio-content svg {
+  width: 100%;
+}
+#portfolio-container div#portfolio-content h1 {
+  color: #fff;
+  font-family: "bahnschrift", sans-serif;
+  font-size: 45px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #portfolio-container div#portfolio-content h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 320px) {
+  #portfolio-container div#portfolio-content {
+    height: 959vh;
+  }
+}
+@media screen and (min-width: 375px) {
+  #portfolio-container div#portfolio-content {
+    height: 1085vh;
+  }
+}
+@media screen and (min-width: 425px) {
+  #portfolio-container div#portfolio-content {
+    height: 1202vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  #portfolio-container div#portfolio-content {
+    height: 2048vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #portfolio-container div#portfolio-content {
+    height: 1368vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #portfolio-container div#portfolio-content {
+    height: 1369vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  #portfolio-container div#portfolio-content {
+    height: 959vh;
+  }
+}
+#portfolio-container #port-box {
+  width: 100%;
+}
+#portfolio-container #port-box .port-wrapper {
+  margin: 0;
+}
+#portfolio-container #port-box .port-wrapper section.port-sect {
+  font-family: "bahnschrift", sans-serif;
+  color: #fff;
+  background-color: #917f67;
+  padding: 0.75em;
+}
+#portfolio-container #port-box .port-wrapper section.port-sect h2 {
+  font-size: 35px;
+}
+@media screen and (min-width: 768px) {
+  #portfolio-container #port-box .port-wrapper section.port-sect h2 {
+    font-size: 50px;
+  }
+}
+#portfolio-container #port-box .port-wrapper section.port-sect p {
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  #portfolio-container #port-box .port-wrapper section.port-sect {
+    width: 1000px;
+    height: auto;
+    margin: 1em auto;
+  }
+}
+#portfolio-container #port-box .port-wrapper img {
+  width: 100%;
+  margin: 0.75em 0;
+}
+@media screen and (min-width: 1024px) {
+  #portfolio-container #port-box .port-wrapper img {
+    max-width: 500px;
+    display: flex;
+    margin: 1em auto;
   }
 }/*# sourceMappingURL=style.css.map */

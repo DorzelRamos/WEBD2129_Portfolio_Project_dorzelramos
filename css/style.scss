@@ -252,7 +252,7 @@ footer {
   }
   @media screen and (min-width: 768px) {
     div#about-content {
-      height: 110vh
+      height: 114vh;
     }
   }
   @media screen and (min-width: 1024px) {
@@ -344,6 +344,114 @@ footer {
       }
       p {
         margin: 2em;
+      }
+    }
+  }
+}
+
+#portfolio-container {
+  height: 100%;
+  div#portfolio-content {
+    height: 1000vh;
+    position: relative;
+    // background: green;
+    background-image: url("../images/home_background.jpg");
+    section {
+      background-color: $brownColor;
+      padding: 0.95em 0;
+    }
+    svg {
+      width: 100%;
+    }
+    h1 {
+      color: $whiteColor;
+      font-family: $Bahnschrift;
+      font-size: 45px;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+  @media screen and (min-width: 320px) {
+    div#portfolio-content {
+      height: 959vh;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    div#portfolio-content {
+      height: 1085vh;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    div#portfolio-content {
+      height: 1202vh;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    div#portfolio-content {
+      height: 2048vh;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    div#portfolio-content {
+      height: 1368vh;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    div#portfolio-content {
+      height: 1369vh;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    div#portfolio-content {
+      height: 959vh;
+    }
+  }
+
+  #port-box {
+    width: 100%;
+    .port-wrapper {
+      margin: 0;
+      section.port-sect {
+        font-family: $Bahnschrift;
+        color: $whiteColor;
+        background-color: $brownColor;
+        padding: 0.75em;
+        h2 {
+          font-size: 35px;
+        }
+        @media screen and (min-width: 768px) {
+          h2 {
+            font-size: 50px;
+          }
+        }
+        p {
+          font-size: 20px;
+        }
+        @media screen and (min-width: 1024px) {
+          width: 1000px;
+          height: auto;
+          margin: 1em auto;
+        }
+      }
+      img {
+        width: 100%;
+        // max-height: auto;
+        // min-width: auto;
+        margin: 0.75em 0;
+      }
+      @media screen and (min-width: 1024px) {
+        img {
+          max-width: 500px;
+          display: flex;
+          margin: 1em auto;
+          // min-height: auto;
+        }
       }
     }
   }
